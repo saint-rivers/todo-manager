@@ -1,0 +1,4 @@
+
+button {
+    @apply hover:text-blue-500 px-6 pt-4 pb-3 border-b-2 border-white hover:border-blue-500;
+}
