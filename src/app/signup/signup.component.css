@@ -1,0 +1,14 @@
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  @apply border-solid border-2 border-gray-200 py-1 px-4;
+	@apply hover:bg-gray-50 bg-white;
+}
+
+input[type="submit"] {
+  @apply bg-blue-400 hover:bg-blue-700 hover:text-white cursor-pointer py-1;
+}
+
+input {
+  @apply rounded mt-4;
+}
