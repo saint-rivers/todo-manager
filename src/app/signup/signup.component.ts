@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { AuthenticationService } from '../authentication.service';
 
 @Component({
   selector: 'app-signup',
@@ -15,11 +16,12 @@ export class SignupComponent implements OnInit {
     password: this.password,
   });
 
-  constructor() {}
+  constructor(private authService: AuthenticationService) {}
 
   ngOnInit(): void {}
 
-  loginUser() {
+  loginUser(): void {
     alert(`${this.email.value} ${this.password.value}`);
+    this.authService.login(this.email.value, this.password.value);
   }
 }
