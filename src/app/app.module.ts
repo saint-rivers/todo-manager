@@ -6,19 +6,19 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { SignupComponent } from './signup/signup.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    TopbarComponent,
-    SignupComponent
-  ],
+  declarations: [AppComponent, HomeComponent, TopbarComponent, SignupComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

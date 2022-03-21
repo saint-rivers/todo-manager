@@ -1,14 +1,28 @@
 input[type="email"],
 input[type="password"],
 input[type="text"] {
-  @apply border-solid border-2 border-gray-200 py-1 px-4;
-	@apply hover:bg-gray-50 bg-white;
+  /* @apply border-solid border-2 border-gray-200 py-1 px-4;
+	@apply hover:bg-gray-50 bg-white; */
+
+  @apply py-1;
+  @apply border-b-2 hover:border-blue-500 focus:border-blue-500;
+  @apply focus:outline-none;
 }
 
 input[type="submit"] {
-  @apply bg-blue-400 hover:bg-blue-700 hover:text-white cursor-pointer py-1;
+  @apply py-2;
+  @apply text-white font-bold hover:text-white;
+  /* @apply border-b-2 hover:border-b-0; */
+  /* @apply rounded-none hover:bg-gray-100 bg-blue-500 cursor-pointer; */
+  @apply bg-blue-500 hover:bg-indigo-700;
+  @apply cursor-pointer;
 }
 
 input {
-  @apply rounded mt-4;
+  @apply w-full;
+  @apply mt-4;
+}
+
+h1 {
+  @apply font-bold text-lg;
 }
